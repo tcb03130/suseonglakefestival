@@ -43,8 +43,60 @@ body {
   height: 1005;
 }
 
-.main-bar img {
-  position: absolute;
+.date-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  top: 845px; /* 상단에서 10px 떨어진 위치 */
+  height: 750px;
+  font-family: "Pretendard";
+}
+.date-list ul {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px; /* 리스트 아이템 사이의 간격 */
+}
+.date-list li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.date-title span {
+  font-size: 20px;
+  font-family: "Pretendard";
+  font-weight: 600;
+  color: rgba(57, 38, 88, 0.6);
+}
+.date-title h1 {
+  font-size: 40px;
+  color: #392658;
+  margin-top: 40px;
+  font-weight: 700;
+}
+
+.date-title h3 {
+  font-size: 24px;
+  margin-top: 30px;
+  font-weight: 400;
+  color: #181818;
+}
+.date-title {
+  position: relative;
+  width: 100%;
+}
+.date {
+  width: 100%;
+  margin-top: 80px;
+  font-size: 24px;
+  color: #181818;
+}
+.date .bold {
+  font-weight: 600;
+}
+.date img {
+  margin-top: 80px;
 }
