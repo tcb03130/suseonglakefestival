@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="js/shy.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
   </head>
   <body>
     <!-- header -->
@@ -79,7 +82,59 @@
             </ul>
           </div>
         </div>
+        
+      <div class="content-1">
+        <div class="text">
+          <div class="text-1
+          ">
+          <span>행복을 만드는 도시 수성구에서 펼쳐지는</span></div>
+          <div class="img-1">
+          <img src="images/2024 SUSEONG LAKE FESTIVAL.png" alt="#"></div>
+        </div>
+        <div class="content-2">
+        <div class="logo-2">
+          <img src="images/logo-2.png" alt="#">
+        </div>
+        <div>
+          <p>다양한 취향을 저격할<br>
+          다채로운 행사 공연 </p>
+        </div>
+  
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/slide-1.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/slide-2.png" alt=""></div>
+        <div class="swiper-slide"><img src="images/slide-3.png" alt=""></div>
+        
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
       </main>
     </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
   </body>
 </html>

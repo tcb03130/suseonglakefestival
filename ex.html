@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자동 슬라이드 쇼</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* styles.css */
+      .slideshow-container {
+        position: relative;
+        max-width: 100%;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      .fade {
+        -webkit-animation: fade 2.5s ease-in-out;
+        -moz-animation: fade 2.5s ease-in-out;
+        -o-animation: fade 2.5s ease-in-out;
+        animation: fade 2.5s ease-in-out;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/main.png" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="images/2024 SUSEONG LAKE FESTIVAL.png" style="width: 100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="images/modal.png" style="width: 100%" />
+      </div>
+      <!-- 추가 슬라이드가 필요하면 여기에 추가 -->
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        const slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; // Hide all slides
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        } // Reset index if it exceeds the number of slides
+        slides[slideIndex - 1].style.display = "block"; // Show the current slide
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds (3000 milliseconds)
+      }
+    </script>
+  </body>
+</html>
