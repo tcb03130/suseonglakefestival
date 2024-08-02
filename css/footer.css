@@ -1,35 +1,269 @@
-footer {
-  background-color: #fff; /* 푸터 배경 색상 */
-}
-
+/* 기본 푸터 전체 스타일 */
 .footer {
   position: relative;
   width: 100%;
-  height: 100px;
-  align-items: center;
+  height: 500px; /* 기본 높이 설정 */
 }
+
+/* 기본 배경 이미지 스타일 */
 .bg-img {
   background-image: url("../images/ba-footer.png");
-  background-size: cover; /* 이미지가 컨테이너를 가득 채우도록 함 */
-  background-position: center; /* 이미지의 중앙을 컨테이너의 중앙에 맞춤 */
-  background-repeat: no-repeat; /* 이미지 반복을 방지 */
-  height: 100vh; /* 전체 화면 높이 */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100%;
   display: flex;
+  justify-content: space-between; /* 좌우 공간을 균등하게 배치 */
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative; /* 상대 위치 설정 */
+}
+
+/* 기본 왼쪽 컨테이너 스타일 */
+.left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
+  margin-left: 90px;
 }
 
+/* 기본 로고 컨테이너 스타일 */
 .bg-logo {
-  float: left; /* 왼쪽으로 정렬 */
-  margin-right: 20px; /* .bg-logo와 .cop 사이의 간격 */
+  position: relative; /* 기본 위치 설정 */
+  z-index: 1; /* 배경 이미지 위에 표시되도록 설정 */
 }
 
+/* 기본 로고 이미지 스타일 */
 .bg-logo img {
-  max-width: 100%; /* 이미지 크기를 부모 컨테이너에 맞춤 */
-  height: auto; /* 이미지 비율 유지 */
+  max-width: 100%;
+  height: auto;
 }
 
+/* 기본 저작권 섹션 스타일 */
 .cop {
-  margin-top: 10px; /* .bg-logo와 .cop 사이의 간격 */
-  clear: both; /* .bg-logo와의 플로팅 간격을 제거 */
+  font-size: 18px;
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* 기본 주소 섹션 스타일 */
+.address {
+  position: relative;
+  top: 40%;
+  font-size: 24px; /* ul의 폰트 크기 설정 */
+  font-weight: bold;
+  color: #fff; /* ul의 색상 설정 */
+  text-align: left; /* 오른쪽 정렬 */
+  margin-right: 362px; /* 오른쪽 여백 설정 */
+  display: flex;
+  flex-direction: column; /* 세로로 정렬 */
+  justify-content: center; /* 수직 중앙 정렬 */
+}
+
+.address ul {
+  list-style: none; /* 기본 리스트 스타일 제거 */
+  padding: 0; /* 기본 패딩 제거 */
+  margin: 0; /* 기본 마진 제거 */
+}
+
+.address > ul {
+  margin-bottom: 40px; /* ul 사이의 간격 설정 */
+}
+
+.address li {
+  font-size: 18px; /* li의 폰트 크기 설정 */
+  color: #6d6d6d; /* li의 색상 설정 */
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+/* 기본 소셜 미디어 아이콘 스타일 */
+.ikon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* 오른쪽 정렬 */
+  margin-right: 162px;
+  justify-content: center; /* 수직 중앙 정렬 */
+  gap: 20px;
+}
+
+.ikon a {
+  margin: 5px 0; /* 각 아이콘 사이의 간격 */
+}
+
+.ikon img {
+  width: 50px;
+  height: 50px;
+}
+
+/* 모바일 반응형 디자인 */
+
+@media (max-width: 360px) {
+  .footer {
+    height: auto; /* 높이를 자동으로 조정 */
+  }
+
+  .bg-img {
+    height: 220px; /* 모바일 화면에서의 높이 설정 */
+    width: 360px; /* 모바일 화면에서의 가로 크기 설정 */
+    background-size: cover; /* 배경 이미지 크기 조정 */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0; /* 모바일에서는 패딩 제거 */
+    box-sizing: border-box;
+    position: relative; /* 상대 위치 설정 */
+  }
+
+  .bg-logo {
+    position: absolute; /* 절대 위치로 이동 */
+    top: 65px; /* 상단에 위치 */
+    left: 10%; /* 가운데 정렬 */
+    transform: translateX(-10%); /* 가운데 정렬 보정 */
+    width: 100px; /* 모바일 화면에서 로고 가로 사이즈 설정 */
+    height: 64px; /* 모바일 화면에서 로고 세로 사이즈 설정 */
+  }
+
+  .bg-logo img {
+    width: 100%; /* 로고 이미지 가로 크기 100% */
+    height: auto; /* 로고 이미지 세로 크기 자동 조정 */
+  }
+
+  .cop {
+    position: absolute; /* 절대 위치로 이동 */
+    bottom: 10px; /* 하단에 위치 */
+    left: 50%; /* 가운데 정렬 */
+    transform: translateX(-50%); /* 가운데 정렬 보정 */
+    font-size: 6px; /* 모바일 화면에서의 폰트 크기 설정 */
+    text-align: center; /* 가운데 정렬 */
+  }
+
+  .address {
+    position: absolute; /* 절대 위치로 이동 */
+    top: 60%; /* bg-logo 아래로 이동 */
+    left: 8%; /* 왼쪽 여백 설정 */
+    font-size: 10px; /* 모바일 화면에서의 폰트 크기 설정 */
+    margin-right: 10px; /* 오른쪽 여백 제거 */
+    color: #fff; /* 글자 색상 유지 */
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .address ul {
+    display: flex;
+    margin: 0px; /* 간격 제거 */
+    margin-bottom: 10px; /* ul의 하단 여백 제거 */
+  }
+
+  .address li {
+    display: block;
+    font-size: 8px; /* 모바일 화면에서 li의 폰트 크기 설정 */
+    margin-top: -0.5px; /* 상단 여백 제거 */
+    margin-left: 10px;
+  }
+
+  /* li를 가로로 정렬하고 각 항목 사이에 간격 추가 */
+  .address > ul > li {
+    display: inline-block; /* 인라인 블록으로 변환 */
+    margin-right: 10px; /* li 간격 설정 */
+    line-height: 1.5;
+  }
+  .ikon {
+    position: absolute; /* 절대 위치로 이동 */
+    top: 45%;
+    right: 5px; /* 오른쪽 여백 설정 */
+    align-items: center; /* 가운데 정렬 */
+    margin: 5px;
+    gap: 0;
+  }
+
+  .ikon img {
+    width: 20px; /* 모바일 화면에서 아이콘 가로 사이즈 설정 */
+    height: 20px; /* 모바일 화면에서 아이콘 세로 사이즈 설정 */
+  }
+}
+
+@media (max-width: 320px) {
+  .footer {
+    height: auto; /* 높이를 자동으로 조정 */
+  }
+
+  .bg-img {
+    height: 180px; /* 모바일 화면에서의 높이 설정 */
+    width: 320px; /* 모바일 화면에서의 가로 크기 설정 */
+    background-size: cover; /* 배경 이미지 크기 조정 */
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0; /* 모바일에서는 패딩 제거 */
+    box-sizing: border-box;
+    position: relative; /* 상대 위치 설정 */
+  }
+
+  .bg-logo {
+    position: absolute; /* 절대 위치로 이동 */
+    top: 50px; /* 상단에 위치 */
+    left: 10%; /* 가운데 정렬 */
+    transform: translateX(-10%); /* 가운데 정렬 보정 */
+    width: 74px; /* 모바일 화면에서 로고 가로 사이즈 설정 */
+    height: 38px; /* 모바일 화면에서 로고 세로 사이즈 설정 */
+  }
+
+  .bg-logo img {
+    width: 100%; /* 로고 이미지 가로 크기 100% */
+    height: auto; /* 로고 이미지 세로 크기 자동 조정 */
+  }
+
+  .cop {
+    position: absolute; /* 절대 위치로 이동 */
+    bottom: 10px; /* 하단에 위치 */
+    left: 50%; /* 가운데 정렬 */
+    transform: translateX(-50%); /* 가운데 정렬 보정 */
+    font-size: 5px; /* 모바일 화면에서의 폰트 크기 설정 */
+    text-align: center; /* 가운데 정렬 */
+  }
+
+  .address {
+    position: absolute; /* 절대 위치로 이동 */
+    top: 55%; /* bg-logo 아래로 이동 */
+    left: 8%; /* 왼쪽 여백 설정 */
+    font-size: 10px; /* 모바일 화면에서의 폰트 크기 설정 */
+    margin-right: 10px; /* 오른쪽 여백 제거 */
+    color: #fff; /* 글자 색상 유지 */
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .address ul {
+    display: flex;
+    margin: 0px; /* 간격 제거 */
+    margin-bottom: 5px; /* ul의 하단 여백 제거 */
+  }
+
+  .address li {
+    display: block;
+    font-size: 8px; /* 모바일 화면에서 li의 폰트 크기 설정 */
+    margin-top: 2px; /* 상단 여백 제거 */
+    margin-left: 10px;
+    gap: 0px;
+  }
+
+  /* li를 가로로 정렬하고 각 항목 사이에 간격 추가 */
+  .address > ul > li {
+    display: inline-block; /* 인라인 블록으로 변환 */
+    margin-right: 10px; /* li 간격 설정 */
+  }
+  .ikon {
+    position: absolute; /* 절대 위치로 이동 */
+    top: 40%;
+    right: 10px; /* 오른쪽 여백 설정 */
+    align-items: center; /* 가운데 정렬 */
+    gap: 0;
+    margin: 5px;
+  }
+
+  .ikon img {
+    width: 15px; /* 모바일 화면에서 아이콘 가로 사이즈 설정 */
+    height: 15px; /* 모바일 화면에서 아이콘 세로 사이즈 설정 */
+  }
 }
