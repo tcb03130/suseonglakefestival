@@ -1,9 +1,9 @@
 
 .frame {
   position: relative;
+  top: 126px;
   width: 100%;
   display: flex;
-  top: 126px;
   gap: 25px;
   align-items: center;
   flex-direction: column;
@@ -46,17 +46,17 @@
 
 .slide-container {
   position: relative;
-  width: 100%;
   top: 200px;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .slide-sub {
+  top: 170px;
   width: 100%;
   height: 700px;
-  top: 170px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,10 +64,10 @@
 }
 
 .slide-sub a {
-  flex: 0 0 auto;
-  margin: 50px;
   display: flex;
   align-items: center;
+  flex: 0 0 auto;
+  margin: 50px;
 }
 
 .slide-sub img {
@@ -84,15 +84,15 @@
 
 .slide-button {
   position: absolute;
-  top: 70%;
-  transform: translateY(-50%);
+  top: 65%;
+  margin: 30px;
+  padding: 20px;
+  border: none;
+  z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  border: none;
-  padding: 20px;
-  margin: 30px;
   cursor: pointer;
-  z-index: 10;
+  transform: translateY(-50%);
 }
 
 .slide-button.prev {
@@ -103,21 +103,22 @@
   right: 50px;
 }
 .dots {
-  position: absolute;
-  bottom: -200px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin-top: 300px;
 }
 
 .dot {
-  height: 10px;
   width: 10px;
+  height: 10px;
+  display: inline-block;
   margin: 0 5px;
   background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
   transition: background-color 0.3s ease;
+  border-radius: 50%;
 }
 
 .dot.active {
@@ -125,19 +126,57 @@
 }
 
 .graph {
+ position:relative;
+}
+
+.graph .div {
   position: relative;
   width: 100%;
-  height: 300px;
-  top: 500px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+}
+
+.graph .notice {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-.notice {
-  position: relative;
+.graph > .div > .tnt-wr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "pretendard-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 400;
 }
 
-.notice .not-box {
+.not-box {
+  position: absolute;
   display: flex;
+  align-items: center;
+  width: 1400px;
+  height: 100px;
+  top: 153px;
+  justify-content: space-between;
+  padding: 47px 19px 47px 50px;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-width: 2px;
+  border-bottom-style: solid;
+  border-color: #3ec0c3;
+  left: 50%; 
+  transform: translateX(-50%);
+ } 
+
+.not-boxs {
+  display: flex;
+  flex-direction: column;
+  width: 99px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
 }
