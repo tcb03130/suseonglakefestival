@@ -46,7 +46,7 @@
 
 .slide-container {
   position: relative;
-  top: 200px;
+  top: 260px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -95,6 +95,7 @@
   transform: translateY(-50%);
 }
 
+
 .slide-button.prev {
   left: 50px
 }
@@ -108,7 +109,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 300px;
+  margin-top: 400px;
 }
 
 .dot {
@@ -156,27 +157,100 @@
 
 .not-box {
   position: absolute;
-  display: flex;
-  align-items: center;
+  top: 153px;
+  left: 50%;
   width: 1400px;
   height: 100px;
-  top: 153px;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 47px 19px 47px 50px;
+  border-color: #3ec0c3;
   border-top-width: 2px;
   border-top-style: solid;
-  border-width: 2px;
   border-bottom-style: solid;
-  border-color: #3ec0c3;
-  left: 50%; 
+  border-width: 2px; 
   transform: translateX(-50%);
  } 
 
 .not-boxs {
-  display: flex;
-  flex-direction: column;
-  width: 99px;
-  align-items: center;
-  gap: 16px;
   position: relative;
+  width: 99px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.not-boxs > .txt-a{
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "pretendard-Regular", Helvetica;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #3ec0c3;
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+
+.not-boxs .txt-b{
+  position: relative;
+  align-self: stretch;
+  font-family: "pretendard-Regular", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #484848;
+  text-align: center;
+  letter-spacing: -0.2px;
+}
+.tet-not{
+  position: relative;
+  width: 1129px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.tet-not .text-wra{
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "pretendard-Regular", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #181818;
+  letter-spacing: -0.24px;
+}
+
+.tet-not .tex-p {
+  position: relative;
+  align-self: stretch;
+  font-family: "pretendard-Regular", Helvetica;
+  font-weight: 400;
+  align-self: stretch;
+  line-height: 25px;
+  font-size: 20px;
+  color: #484848;
+  letter-spacing: -0.2px;
+}
+.not-boxb{
+  position: absolute;
+  width: 1400px;
+  height: 100px;
+  display: flex;
+  gap: 75px;
+  top: 327px;
+  padding: 47px 19px 47px 50px;
+  border-bottom-width: 1px;
+  border-color: #484848;
+  border-bottom-style: solid;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
 }
