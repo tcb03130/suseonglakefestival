@@ -81,6 +81,8 @@
 
 /* 기본 소셜 미디어 아이콘 스타일 */
 .ikon {
+  position: relative;
+  top: -50px;
   display: flex;
   flex-direction: column;
   align-items: flex-end; /* 오른쪽 정렬 */
@@ -137,6 +139,7 @@
     transform: translateX(-50%); /* 가운데 정렬 보정 */
     font-size: 6px; /* 모바일 화면에서의 폰트 크기 설정 */
     text-align: center; /* 가운데 정렬 */
+    margin-bottom: 10px;
   }
 
   .address {
