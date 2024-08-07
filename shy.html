@@ -9,132 +9,34 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/font.css" />
-    <link rel="stylesheet" href="js/shy.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    
+    <link rel="stylesheet" href="js/shy.js" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-    <!-- header -->
-    <div class="wrap">
-      <!-- header -->
-      <header class="header">
-        <!-- header-start -->
-        <a href="#" class="logo">
-          <img src="images/logo.png" alt="logo" />
-        </a>
-        <nav class="nav">
-          <ul class="navi">
-            <li>
-              <a href="#">INTRODUCTION</a>
-            </li>
-            <li>
-              <a href="#">PROGRAM</a>
-            </li>
-            <li>
-              <a href="#">COMMUNITY</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-      <!-- main -->
-      <main>
-        <div class="main">
-          <img src="images/main.png" alt="main" />
-        </div>
-
-        <div class="date-list">
-          <div class="date-title">
-            <ul>
-              <li><span>2024 SUSEONG LAKE FESTIVAL</span></li>
-              <li><h1>시민의 열정과 에너지가 모인 공동의 축제장</h1></li>
-              <li>
-                <h3>
-                  오직 대구 수성못에서만 즐길 수 있는 페스티벌을 만나볼까요?
-                </h3>
-              </li>
-            </ul>
-          </div>
-          <div class="date">
-            <ul>
-              <li>
-                <div>
-                  <span class="bold">축제 기간</span
-                  ><span> : 2024.09.27(금) ~ 09.29(일)</span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <span class="bold">축제 장소</span
-                  ><span> : 수성못 일원, 울루루 문화 광장 </span>
-                </div>
-              </li>
-              <li>
-                <div>
-                  <span class="bold">행사 내용</span
-                  ><span></span>
-                    : 주제공연, 퓨전국악콘서트, 거리예술공연, 수성못 버스킹
-                    등</span
-                  >
-                </div>
-              </li>
-              <li><img src="images/suseonglogo.png" alt="" /></li>
-            </ul>
-          </div>
-        </div>
-        
-      <div class="content-1">
-        <div class="text">
-          <div class="text-1
-          ">
-          <span>행복을 만드는 도시 수성구에서 펼쳐지는</span></div>
-          <div class="img-1">
-          <img src="images/2024 SUSEONG LAKE FESTIVAL.png" alt="#"></div>
-        </div>
-        <div class="content-2">
-        <div class="logo-2">
-          <img src="images/logo-2.png" alt="#">
-        </div>
-        <div>
-          <p>다양한 취향을 저격할<br>
-          다채로운 행사 공연 </p>
-        </div>
-  
-    <!-- Swiper -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/slide-1.png" alt=""></div>
-        <div class="swiper-slide"><img src="images/slide-2.png" alt=""></div>
-        <div class="swiper-slide"><img src="images/slide-3.png" alt=""></div>
-        
-      </div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-pagination"></div>
-    </div>
-      </main>
-    </div>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

@@ -1,41 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", Helvetica, sans-serif;
+}
 
 .frame {
   position: relative;
   top: 126px;
   width: 100%;
   display: flex;
-  gap: 25px;
+  gap: 30px;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
+
 .frame .program {
-    position: relative;
-    /* flex: 0 0 auto;/ */
+  position: relative;
 }
 
-.frame .div {
-    position: relative;
-    font-family: "pretendard-Regular", Helvetica;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: normal;
-    color: #181818;
-    text-align: center;
-    letter-spacing: -0.24px;
+.text-container {
+  position: relative;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  color: #181818;
+  text-align: center;
+  letter-spacing: -0.24px;
 }
 
-.frame .text-wrapper {
+.text-wrapper {
   letter-spacing: -0.06px;
 }
 
-.frame .span {
+.text-bold {
   font-weight: bold;
 }
 
-.frame .p {
+.description {
   position: relative;
-  font-family: "pretendard-Regular", Helvetica;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
@@ -53,7 +62,7 @@
   justify-content: center;
 }
 
-.slide-sub {
+.slide-content {
   top: 170px;
   width: 100%;
   height: 700px;
@@ -63,20 +72,20 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.slide-sub a {
+.slide-content a {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
   margin: 50px;
 }
 
-.slide-sub img {
+.slide-content img {
   width: 349px;
   height: 464px;
   transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
-.slide-sub img.middle {
+.slide-content img.middle {
   width: 608px;
   height: 809px;
   z-index: 1;
@@ -95,14 +104,16 @@
   transform: translateY(-50%);
 }
 
-
 .slide-button.prev {
-  left: 50px
+  left: 50px;
+  display: none;
 }
 
 .slide-button.next {
   right: 50px;
+  display: none;
 }
+
 .dots {
   position: relative;
   bottom: 0;
@@ -126,12 +137,11 @@
   background-color: #717171;
 }
 
-.graph {
- position:relative;
+.notice-section {
+  position: relative;
 }
 
-.graph .div {
-  position: relative;
+.notice-header {
   width: 100%;
   display: flex;
   gap: 30px;
@@ -140,22 +150,16 @@
   margin-top: 200px;
 }
 
-.graph .notice {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.graph > .div > .tnt-wr {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "pretendard-Regular", Helvetica;
-  font-size: 24px;
-  font-weight: 400;
+.notice-image {
 }
 
-.not-box {
+.notice-text {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.notice-box {
   position: absolute;
   top: 153px;
   left: 50%;
@@ -169,12 +173,11 @@
   border-top-width: 2px;
   border-top-style: solid;
   border-bottom-style: solid;
-  border-width: 2px; 
+  border-width: 2px;
   transform: translateX(-50%);
- } 
+}
 
-.not-boxs {
-  position: relative;
+.notice-info {
   width: 99px;
   display: flex;
   gap: 16px;
@@ -182,32 +185,21 @@
   flex-direction: column;
 }
 
-.not-boxs > .txt-a{
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "pretendard-Regular", Helvetica;
+.notice-number {
   font-size: 30px;
   font-weight: 600;
-  line-height: 25px;
   color: #3ec0c3;
   text-align: center;
-  letter-spacing: -0.2px;
 }
 
-.not-boxs .txt-b{
-  position: relative;
-  align-self: stretch;
-  font-family: "pretendard-Regular", Helvetica;
+.notice-date {
   font-size: 20px;
   font-weight: 400;
-  line-height: 25px;
   color: #484848;
   text-align: center;
-  letter-spacing: -0.2px;
 }
-.tet-not{
-  position: relative;
+
+.notice-content {
   width: 1129px;
   display: flex;
   gap: 20px;
@@ -215,36 +207,28 @@
   flex-direction: column;
 }
 
-.tet-not .text-wra{
-  position: relative;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: "pretendard-Regular", Helvetica;
+.notice-title {
   font-size: 24px;
   font-weight: 600;
-  line-height: normal;
   color: #181818;
   letter-spacing: -0.24px;
 }
 
-.tet-not .tex-p {
-  position: relative;
-  align-self: stretch;
-  font-family: "pretendard-Regular", Helvetica;
-  font-weight: 400;
-  align-self: stretch;
-  line-height: 25px;
+.notice-description {
   font-size: 20px;
+  font-weight: 400;
   color: #484848;
+  line-height: 25px;
   letter-spacing: -0.2px;
 }
-.not-boxb{
+
+.notice-box-secondary {
   position: absolute;
   width: 1400px;
   height: 100px;
   display: flex;
   gap: 75px;
-  top: 327px;
+  top: 256px;
   padding: 47px 19px 47px 50px;
   border-bottom-width: 1px;
   border-color: #484848;

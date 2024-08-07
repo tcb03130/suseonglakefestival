@@ -170,10 +170,11 @@ body {
   object-fit: cover;
 }
 
-.swiper-pagination-bullet {
-color: #007aff; /* 기본 비활성화 색상 */
-}
 
-.swiper-pagination-bullet-active {
-  color: #ff5722; /* 활성화 색상 */
-} 
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+}
+.swiper-button-next, .swiper-button-prev {
+  color: #fff !important;
+}

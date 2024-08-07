@@ -1,0 +1,54 @@
+.gallfr {
+  width: 100%;
+  height: 100px;
+}
+.galleryfont {
+  position: relative;
+  top: 300px;
+  margin-top: 150px;
+  display: flex;
+  left: 58px;
+}
+.galleryfont a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  left: 1450px;
+}
+.ftimg {
+  position: relative;
+  left: 920px;
+  width: 174px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gall {
+  position: relative;
+  display: flex;
+  transform: translateX(15.5%);
+  width: 1605px;
+  height: 851px;
+}
+
+.gaimg {
+  position: relative;
+  top: 400px;
+  left: 94px;
+  width: 600px;
+  height: 800px;
+}
+.gaimg2 {
+  position: absolute;
+  top: 400px;
+  left: 744px;
+  width: 732px;
+  height: 375px;
+}
+.gaimg3 {
+  position: absolute;
+  top: 830px;
+  left: 744px;
+  width: 732px;
+  height: 375px;
+}
