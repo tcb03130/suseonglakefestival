@@ -18,7 +18,7 @@
 
 - 신화영 - header, main content-1/2 작업
 - 인순용 - main content-3, notice 작업
-- 김지연 - footer, modal 작업
+- 김지연 - footer, 팝업 창 작업
 
 -공동작업 - gallery
 
