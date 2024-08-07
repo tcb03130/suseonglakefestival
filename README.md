@@ -1,4 +1,4 @@
-# 1. 프로젝트 명 : suseonglake festival
+# 1. 프로젝트 명 : Suseonglake Festival
 
 # 2. 프로젝트 개요
 
